@@ -24,3 +24,4 @@ composer update
 
 rm .env
 rm -rf vendor/*
+rm composer.lock
