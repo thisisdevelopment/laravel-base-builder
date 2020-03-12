@@ -1,6 +1,13 @@
 {
     "name": "thisisdevelopment/laravel-base",
     "description": "Opinionated Laraval base install",
+    "require": {
+        "oomphinc/composer-installers-extender": "^1.1"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "thisisdevelopment/laravel-base-dev": "^0.2.0"
+    },
     "extra": {
         "installer-types": [
             "laravel-module",

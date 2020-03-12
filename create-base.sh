@@ -17,9 +17,7 @@ mv laravel-base laravel-base-backup
 mkdir laravel-base
 cd laravel-base
 
-composer create-project laravel/laravel .
-composer require oomphinc/composer-installers-extender
-composer require --dev thisisdevelopment/laravel-base-dev:^0.1.3 roave/security-advisories:dev-master
+composer create-project --no-install --no-scripts laravel/laravel .
 
 mkdir -p app/App
 shopt -s extglob
@@ -34,9 +32,7 @@ mv composer.json.new composer.json
 cp -a ../${dir}/files/. ./
 cat "../${dir}/gitignore" >> .gitignore
 
-rm .env
-rm -rf vendor/*
-rm composer.lock
+rm -rf .env composer.lock vendor/*
 
 mv ../laravel-base-backup/.git ./
 git status
