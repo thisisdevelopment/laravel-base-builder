@@ -1,6 +1,5 @@
 .DS_Store
 /coverage
-/.idea
 /.vagrant
 /*.sublime-*
 /_ide_helper*

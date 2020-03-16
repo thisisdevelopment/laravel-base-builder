@@ -18,6 +18,8 @@ mkdir laravel-base
 cd laravel-base
 
 composer create-project --no-install --no-scripts laravel/laravel .
+mv ../laravel-base-backup/.git ./
+rm -rf ../laravel-base-backup
 
 mkdir -p app/App
 shopt -s extglob
@@ -34,5 +36,4 @@ cat "../${dir}/gitignore" >> .gitignore
 
 rm -rf .env composer.lock vendor/*
 
-mv ../laravel-base-backup/.git ./
 git status
