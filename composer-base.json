@@ -6,7 +6,7 @@
     },
     "require-dev": {
         "roave/security-advisories": "dev-master",
-        "thisisdevelopment/laravel-base-dev": "^0.2.0"
+        "thisisdevelopment/laravel-base-dev": "^0.3.0"
     },
     "extra": {
         "installer-types": [
