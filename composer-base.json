@@ -6,7 +6,7 @@
     },
     "require-dev": {
         "roave/security-advisories": "dev-master",
-        "thisisdevelopment/laravel-base-dev": "^0.3.0"
+        "thisisdevelopment/laravel-base-dev": "^0.4.0"
     },
     "extra": {
         "installer-types": [
@@ -34,7 +34,16 @@
         ],
         "post-create-project-cmd": [
             "Composer\\Config::disableProcessTimeout",
-            "bin/init"
+            "bin/dev init"
         ]
+    },
+    "repositories": {
+        "package-dev": {
+            "type": "path",
+            "url": "./packages/*/",
+            "options": {
+                "symlink": true
+            }
+        }
     }
 }
