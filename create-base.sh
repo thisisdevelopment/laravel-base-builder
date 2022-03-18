@@ -34,7 +34,7 @@ mv composer.json.new composer.json
 cp -a ../${dir}/files/. ./
 cat "../${dir}/gitignore" >> .gitignore
 
-~/.composer/vendor/bin/phpcbf || ~/.composer/vendor/bin/phpcbf
+~/.composer/vendor/bin/phpcbf || ~/.config/composer/vendor/bin/phpcbf
 rm -rf .env composer.lock vendor/*
 
 git status
