@@ -1,6 +1,7 @@
 .DS_Store
 /coverage
 /.vagrant
+/.idea
 /*.sublime-*
 /_ide_helper*
 /.phpstorm.*
