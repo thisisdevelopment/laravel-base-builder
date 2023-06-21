@@ -45,5 +45,11 @@
                 "symlink": true
             }
         }
-    }
+    },
+    "config": {
+      "allow-plugins": {
+        "composer/installers": true,
+        "oomphinc/composer-installers-extender": true
+      }
+  }
 }
